@@ -39,6 +39,42 @@
  * c) True
  */
 
+/*
+ * Question 17
+ * a) Switching values E with H would result in a valid Binary Search tree
+ * b) Inorder: "A, C, H, E, R, S "Preorder: "H, C, A, R, E, S"
+ */
+
+/*
+ * Question 18
+ * 475
+ * ||
+ * 474 749
+ * ||   ||
+ * 623 292 557 681 
+ * Turns into
+ * 557
+ * ||
+ * 474 681
+ * ||   ||
+ * 292 475 623 749
+ * 
+ */
+
+/* 
+ * Question 19
+ * L
+ * ||
+ * G O
+ * ||||
+ * A I M R
+ *   |   |
+ *   H   T
+ *   
+ * Inorder: A G I H L O M R T
+ * Preorder: L G A I H O M R T
+ * Postorder: A H I G M T R O L
+ */
 public class Chapter24 {
 
 	public static void main(String[] args) {
@@ -86,6 +122,11 @@ public class Chapter24 {
 		print(sumTree(k1));
 		
 		buildFull(5);
+		print("hello");
+		String string = "LOGARITHM";
+		for(int i = 0; i < string.length(); i++){
+			print((int) string.charAt(i) +" "+ string.charAt(i));
+		}
 	}
 	// Question 6
 	public static boolean isLeaf(TreeNode node){
